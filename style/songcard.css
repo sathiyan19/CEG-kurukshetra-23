@@ -1,0 +1,256 @@
+.songs {
+    /* position: static; */
+    /* right: 0; */
+    /* top: 0; */
+    width: 80%;
+    float: right;
+    /* height: 2000px; */
+    /* height: 59px; */
+    /* overflow-x: scroll; */
+    margin-top: -100px;
+    /* background-color: aquamarine; */
+    padding: 20px;
+}
+
+.pnow {
+    padding: 10px;
+    /* top: 400px; */
+    float: right;
+    margin-top: -320px;
+    margin-right: 700px;
+    background-color: #0066cc;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: black 0px 20px 40px;
+}
+
+.pnow:hover {
+    cursor: pointer;
+}
+
+.head {
+    /* font-family: 'bad-grunge'; */
+    font-size: 48px !important;
+    font-weight: 700;
+    color: #ffffff;
+    /* text-align: center; */
+    /* margin-bottom: 25px; */
+}
+
+.col {
+    /* border: 3px solid #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 45%; */
+}
+
+.card {
+    border-radius: 30px;
+    height: 195px;
+    width: 295px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* transition: 0.5s ease-in-out; */
+}
+
+.card-out {
+    border-radius: inherit;
+    height: 200px;
+    border-radius: 30px;
+    width: 300px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.song-det {
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.songname {
+    font-size: 24px;
+    font-weight: 800;
+    color: black;
+}
+
+.card:hover .op {
+    visibility: visible;
+    transition: 0.5s ease-in-out;
+}
+
+.trap {
+    width: 100%;
+    float: right;
+    /* background-color: yellowgreen; */
+}
+
+.img {
+    /* text-shadow: ; */
+    max-height: fit-content;
+    width: 100%;
+    height: auto;
+}
+
+.img:hover {
+    cursor: pointer;
+}
+
+.playcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    /* opacity: 1; */
+    background-color: #0066cc;
+}
+
+.playcon:hover {
+    cursor: pointer;
+}
+
+.op {
+    visibility: hidden;
+    background-color: #fff;
+    border-radius: 30px;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.stime {
+    font-size: 20px;
+    color: black;
+}
+
+#c1 {
+    background-image: url("/pic/mad.jpg");
+}
+
+#c2 {
+    background-image: url("/pic/pic2.jpg");
+}
+
+#c3 {
+    background-image: url("/pic/pic3.jpg");
+}
+
+#c4 {
+    background-image: url("/pic/pic4.jpg");
+}
+
+#c5 {
+    background-image: url("/pic/pic5.jpg");
+}
+
+#c6 {
+    background-image: url("/pic/pic6.png");
+}
+
+#c7 {
+    background-image: url("/pic/pic7.png");
+}
+
+#c8 {
+    background-image: url("/pic/pic8.jpg");
+}
+
+@media(max-width:800px) {
+    .trap {
+        width: 100%;
+        margin-top: 60px;
+    }
+    .contrib {
+        width: 100%;
+        float: none;
+    }
+    .songs {
+        width: 100%;
+        margin-top: -50px;
+    }
+    .playcon {
+        display: none;
+    }
+}
+
+@media(max-width:640px) {
+    .head {
+        font-size: 36px !important;
+    }
+    .songname {
+        font-weight: 400;
+    }
+    .card-out {
+        width: 100%;
+        height: 40px;
+        border-radius: 15px;
+    }
+    .card {
+        width: 99%;
+        height: 99%;
+        border-radius: 15px;
+    }
+    #c1 {
+        background: none;
+    }
+    #c2 {
+        background: none;
+    }
+    #c3 {
+        background: none;
+    }
+    #c4 {
+        background: none;
+    }
+    #c5 {
+        background: none;
+    }
+    #c6 {
+        background: none;
+    }
+    #c7 {
+        background: none;
+    }
+    #c8 {
+        background: none;
+    }
+    .op {
+        visibility: visible;
+        opacity: 1;
+        /* transition: 0.5s ease-in-out; */
+    }
+    .song-det {
+        width: 100%;
+        flex-direction: row;
+    }
+    .playcon {
+        display: none;
+        height: 25px;
+        width: 25px;
+        font-size: 10px;
+    }
+}
+
+@media(max-width:426px) {
+    .songname {
+        font-size: 20px;
+    }
+    .stime {
+        font-size: 16px;
+    }
+    .card:hover {
+        background-color: #0066cc;
+    }
+}
